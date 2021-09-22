@@ -1,0 +1,82 @@
+
+
+.container{
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    'dis dis dis dis'
+    'AC C div times'
+    'seven eight nine minus'
+    'four five six plus'
+    'one two three equal'
+    'zero zero dot equal'
+    ;
+}
+
+.padButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem 2rem;
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 1.7rem;
+
+}
+.padButton:hover{
+    border: 1px solid white;
+    color: #ccc;
+}
+
+.zero{
+    grid-area:zero;
+}
+
+.equal{
+    grid-area: equal;
+}
+.dis{
+    grid-area: dis;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    /* overflow: hidden; */
+}
+
+.dis input{
+    width: 98%;
+    color: white;
+    text-align: right;
+    background-color: black;
+    outline: none;
+    margin: 0 auto;
+    
+    
+   
+}
+
+input::placeholder{
+    color:white;
+}
+
+.dark-gray{
+    background-color: #333;
+}
+
+.tomato{
+    background-color: tomato;
+}
+
+.blue{
+    background-color: #5599ff;
+}
